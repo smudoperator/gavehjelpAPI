@@ -1,15 +1,25 @@
+import os
 import pandas as pd
-
-df = pd.read_csv('products.csv')
-
-print(df.head())
-
-
+from dotenv import load_dotenv
 from langchain import OpenAI, LLMChain
 from langchain.prompts import PromptTemplate
 
-# Set up OpenAI LLM
-openai_api_key = "fix local variables" 
+# Load environment variables from .env file
+load_dotenv()
+
+# Get the API key from environment variable
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
+if not openai_api_key:
+    raise ValueError("OPENAI_API_KEY is not set in the environment variables")
+
+# Read the CSV file
+df = pd.read_csv('products.csv')
+print(df.head())
+
+print(f"API Key: {openai_api_key}")
+
+# openai_api_key = "fix local variables" 
 llm = OpenAI(api_key=openai_api_key, temperature=0.7)
 
 # Define a template for prompt
