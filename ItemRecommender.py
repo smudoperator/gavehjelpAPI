@@ -4,6 +4,7 @@ import numpy as np
 from dotenv import load_dotenv
 from langchain.prompts import PromptTemplate
 from langchain_openai import OpenAI as LangChainOpenAI
+# from langchain.llms import OpenAI as LangChainOpenAI
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.documents import Document
 from typing import List
@@ -17,7 +18,7 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 if not openai_api_key:
     raise ValueError("OPENAI_API_KEY is not set in the environment variables")
 
-# Load embedded data
+# Load already embedded product list
 df = pd.read_csv('embedded_products.csv')
 
 # Convert embeddings back to numpy arrays
@@ -31,11 +32,11 @@ llm = LangChainOpenAI(api_key=openai_api_key, temperature=0.3)
 # Define a custom retriever
 class ProductRetriever(BaseRetriever):
     df: pd.DataFrame = Field(...)
-    k: int = Field(default=5)
+    k: int = Field(default=5) # Number of products to retrieve
     
     def _get_relevant_documents(self, query: str) -> List[Document]:
-        # Embed the customer query using OpenAI's API
-        query_embedding = np.array([get_embedding(query)])  # Use get_embedding function from OpenAI
+        # Embed customer query using OpenAI
+        query_embedding = np.array([get_embedding(query)])
 
         # Compute cosine similarity between the query and product embeddings
         similarities = cosine_similarity(query_embedding, np.vstack(self.df['embedding']))
@@ -55,8 +56,10 @@ class ProductRetriever(BaseRetriever):
             for _, row in top_k_products.iterrows()
         ]
         return documents
+    
+    
 
-# Initialize OpenAI client
+# Initialize OpenAI client for embedding
 client = OpenAI(api_key=openai_api_key)
 
 def get_embedding(text, model="text-embedding-3-small"):
@@ -67,7 +70,7 @@ def get_embedding(text, model="text-embedding-3-small"):
 # Initialize the retriever
 retriever = ProductRetriever(df=df, k=5)
 
-# Deal with prompt injection
+# Deal with prompt injection (should find a better way to do this)
 def sanitize_input(input_text):
     blacklist = ["ignore", "system:", "forget", "instructions", "assistant:", "exit", "restart", "shut down", "delete"]
     blacklist_norwegian = ["ignorer", "system", "glem", "instrukser", "instruksjoner", "ordre"]
