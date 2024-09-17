@@ -1,32 +1,70 @@
-product_name,price,description
-"Treningsjakke",499,"Lettere jakke for trening, vindtett og vannavstøtende, med refleksdetaljer"
-"Smartklokke",1299,"Flerfunksjons smartklokke med helseovervåkning, GPS og notifikasjoner"
-"Elektrisk tannbørste",349,"Oppladbar elektrisk tannbørste med flere børsteinnstillinger og timer"
-"Ryggsekk",799,"Allsidig ryggsekk med flere rom, justerbare skulderstropper og laptop-lomme"
-"Leppestift",199,"Høydeholdbar leppestift med fuktighetsgivende ingredienser og intens farge"
-"Bluetooth Høyttaler",899,"Bærbar høyttaler med god lydkvalitet, lang batterilevetid og vannbestandig"
-"Sports-BH",299,"Komfortabel sports-BH med god støtte og pustende materiale, ideell for trening"
-"Smartphone",4499,"Siste modell smartphone med høyoppløselig skjerm, kraftig prosessor og dobbel kamera"
-"Veggdekor",199,"Moderne veggdekor i tre med abstrakt mønster, enkel å henge opp"
-"Friskluftsfilter",349,"Luftrenserfilter for bedre inneklima, fjerner støv og allergener"
-"Støvler",899,"Robuste støvler i lær med vanntett membran, egnet for både by og terreng"
-"Barnebok",149,"Fargerik barnebok med illustrasjoner og en spennende historie"
-"Kontorstol",1999,"Ergonomisk kontorstol med justerbare armlener, rygg og sete, polstret for ekstra komfort"
-"Sportssko",699,"Allsidige sportssko med god demping og støtte, egnet for både løping og trening"
-"Armbåndsur",1299,"Elegant armbåndsur med lærrem og klassisk design, vanntett opp til 50 meter"
-"Solkrem",149,"Beskyttende solkrem med høy SPF, vannfast og lett å påføre"
-"Skinnveske",1299,"Kvalitets skinnveske med plass til laptop, dokumenter og personlige eiendeler"
-"Treningsmatte",399,"Høy kvalitet treningsmatte med antiskli-overflate, perfekt for yoga og trening"
-"Notatbok",119,"Luksuriøs notatbok med hardt omslag, linjerte sider og elastisk bånd"
-"Fottøy",799,"Komfortable fottøy i semsket skinn med fleksibel såle, egnet for hverdagsbruk"
-"Smart TV",4999,"55-tommers 4K Smart TV med integrerte streamingtjenester og høy bildekvalitet"
-"Vekkerklokke",299,"Klassisk vekkerklokke med analog visning, justerbar alarm og snooze-funksjon"
-"Fargeleggingsbok",129,"Inspirerende fargeleggingsbok for voksne med vakre mønstre og designs"
-"Vinterjakke",1499,"Varme vinterjakke med isolerende fyll, vannavstøtende og vindtett"
-"Parfyme",599,"Elegant parfyme med en frisk og blomsteraktig duft, 50 ml flaske"
-"Mobildeksel",149,"Slankt mobildeksel i silikon med ekstra beskyttelse og gripende overflate"
-"Vaskeprodukter",219,"Sett med miljøvennlige vaskeprodukter for klær og hjem, inneholder vaskemiddel og skyllemiddel"
-"Vannflaske",199,"Robust vannflaske i rustfritt stål, isolerende og holder væsken kald i flere timer"
-"Yoga Blokk",149,"Stabil og lett yoga blokk i skum, perfekt for støtte under yogaøvelser"
-"Linjal",89,"Klassisk linjal i plast med både cm og inch måling, 30 cm lang"
-"Sminkespeil",299,"LED sminkespeil med forstørrelse, justerbar lysstyrke og kompakt design"
+product_name,price,description,gender
+"Training Jacket",499,"Lightweight training jacket, windproof and water-resistant, with reflective details",unisex
+"Smartwatch",1299,"Multifunctional smartwatch with health monitoring, GPS, and notifications",unisex
+"Electric Toothbrush",349,"Rechargeable electric toothbrush with multiple brushing modes and timer",unisex
+"Backpack",799,"Versatile backpack with multiple compartments, adjustable shoulder straps, and laptop pocket",unisex
+"Lipstick",199,"Long-lasting lipstick with moisturizing ingredients and intense color",women
+"Bluetooth Speaker",899,"Portable speaker with great sound quality, long battery life, and water resistance",unisex
+"Sports Bra",299,"Comfortable sports bra with good support and breathable material, ideal for workouts",women
+"Smartphone",4499,"Latest model smartphone with high-resolution screen, powerful processor, and dual camera",unisex
+"Wall Decor",199,"Modern wooden wall decor with an abstract pattern, easy to hang",unisex
+"Air Filter",349,"Air purifier filter for improved indoor air quality, removes dust and allergens",unisex
+"Boots",899,"Sturdy leather boots with waterproof membrane, suitable for both city and outdoor use",unisex
+"Children's Book",149,"Colorful children's book with illustrations and an exciting story",unisex
+"Office Chair",1999,"Ergonomic office chair with adjustable armrests, back, and seat, padded for extra comfort",unisex
+"Sports Shoes",699,"Versatile sports shoes with good cushioning and support, suitable for running and training",unisex
+"Wristwatch",1299,"Elegant wristwatch with leather strap and classic design, water-resistant up to 50 meters",men
+"Sunscreen",149,"Protective sunscreen with high SPF, waterproof and easy to apply",unisex
+"Leather Bag",1299,"Quality leather bag with space for laptop, documents, and personal belongings",unisex
+"Exercise Mat",399,"High-quality exercise mat with anti-slip surface, perfect for yoga and workouts",unisex
+"Notebook",119,"Luxurious notebook with hard cover, lined pages, and elastic band",unisex
+"Footwear",799,"Comfortable footwear in suede with flexible sole, suitable for everyday use",unisex
+"Smart TV",4999,"55-inch 4K Smart TV with integrated streaming services and high picture quality",unisex
+"Alarm Clock",299,"Classic alarm clock with analog display, adjustable alarm, and snooze function",unisex
+"Coloring Book",129,"Inspiring coloring book for adults with beautiful patterns and designs",unisex
+"Winter Jacket",1499,"Warm winter jacket with insulating fill, water-resistant and windproof",unisex
+"Perfume",599,"Elegant perfume with a fresh and floral scent, 50 ml bottle",women
+"Phone Case",149,"Slim silicone phone case with extra protection and grippy surface",unisex
+"Cleaning Products",219,"Set of eco-friendly cleaning products for clothes and home, includes detergent and fabric softener",unisex
+"Water Bottle",199,"Durable stainless steel water bottle, insulating and keeps liquids cold for several hours",unisex
+"Yoga Block",149,"Stable and lightweight foam yoga block, perfect for support during yoga exercises",unisex
+"Ruler",89,"Classic plastic ruler with both cm and inch measurements, 30 cm long",unisex
+"Makeup Mirror",299,"LED makeup mirror with magnification, adjustable brightness, and compact design",women
+"Running Shoes",799,"Running shoes with responsive cushioning and breathable upper for maximum comfort",unisex
+"Chocolate Box",249,"Exclusive box of chocolates with a selection of handmade pralines",unisex
+"Coffee Machine",1499,"Fully automatic coffee machine with milk frother and adjustable coffee settings",unisex
+"Jogging Pants",349,"Comfortable jogging pants with elastic waist and ankles, made from soft cotton",unisex
+"Heated Scarf",599,"Electronic heated scarf with built-in heating element, perfect for cold days",unisex
+"Sunglasses",799,"Sunglasses with polarized lenses and UV protection, modern design",unisex
+"Leather Belt",399,"Sleek leather belt with metal buckle, available in various sizes",men
+"Golf Set",2499,"Complete golf set with clubs, bag, and accessories, perfect for beginners",men
+"Bicycle",5999,"Mountain bike with aluminum frame, 21 gears, and disc brakes",unisex
+"Suitcase",1999,"Lightweight suitcase with hard shell and 360-degree wheels, available in various sizes",unisex
+"Leather Shoes",1299,"Elegant leather shoes with laces, ideal for formal occasions",men
+"Fitness Watch",1499,"Fitness watch with heart rate monitor, GPS, and workout programs",unisex
+"Capsule Coffee Machine",999,"Compact capsule coffee machine with fast brewing and adjustable cup sizes",unisex
+"Handbag",799,"Modern handbag in faux leather with multiple compartments, available in various colors",women
+"Scarf",199,"Soft wool scarf to keep you warm during the winter months",unisex
+"Hiking Shoes",999,"Durable hiking shoes with waterproof membrane and good support for long hikes",unisex
+"Chocolate Truffles",179,"Decadent chocolate truffles made with dark chocolate and natural ingredients",unisex
+"Suitcase Set",2999,"Set of three suitcases in different sizes, with hard shell and combination lock",unisex
+"Wine Opener",299,"Electric wine opener that easily opens bottles, with rechargeable battery",unisex
+"Running Watch",1799,"GPS running watch with heart rate monitor and training plans, waterproof with long battery life",unisex
+"Espresso Machine",2499,"Manual espresso machine with milk steamer to make perfect coffee at home",unisex
+"Shoulder Bag",699,"Leather shoulder bag with adjustable strap and multiple practical pockets",unisex
+"Wireless Earbuds",1499,"Wireless earbuds with active noise cancellation and long battery life",unisex
+"Coffee Grinder",599,"Electric coffee grinder with adjustable grind settings for perfect brewing",unisex
+"Headphones",1299,"Over-ear headphones with noise cancellation and crystal-clear sound quality",unisex
+"Training Shoes",1099,"Lightweight training shoes with extra support for stability and comfort during workouts",unisex
+"Travel Mug",249,"Thermal travel mug in stainless steel, keeps drinks warm for up to 8 hours",unisex
+"Electric Shaver",899,"Electric shaver with rotating heads and precision trimming",men
+"Hair Dryer",599,"Compact hair dryer with ionic technology for quick drying and less frizz",women
+"Electric Scooter",3999,"Foldable electric scooter with up to 25 km range",unisex
+"Waffle Iron",499,"Double waffle iron with adjustable temperature and non-stick coating",unisex
+"Heart Rate Monitor",999,"Heart rate monitor with activity tracking, sleep tracking, and water resistance",unisex
+"Suitcase Organizer",299,"Set of suitcase organizers in various sizes to keep luggage tidy",unisex
+"Water Bottle with Filter",249,"Reusable water bottle with built-in filter for clean water on the go",unisex
+"Shoe Dryer",799,"Electric shoe dryer that quickly dries shoes without damaging the material",unisex
+"Tie Set",349,"Tie set with matching pocket square and cufflinks in silk",men
+"Electric Grill",1999,"Portable electric grill with adjustable heat and non-stick grill plate",unisex
+"Training Gloves",199,"Padded training gloves with good grip, perfect for strength training",unisex
