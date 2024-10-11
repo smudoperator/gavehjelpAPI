@@ -3,9 +3,9 @@ product_name,price,description,gender
 "Smartwatch",1299,"Multifunctional smartwatch with health monitoring, GPS, and notifications",unisex
 "Electric Toothbrush",349,"Rechargeable electric toothbrush with multiple brushing modes and timer",unisex
 "Backpack",799,"Versatile backpack with multiple compartments, adjustable shoulder straps, and laptop pocket",unisex
-"Lipstick",199,"Long-lasting lipstick with moisturizing ingredients and intense color",women
+"Lipstick",199,"Long-lasting lipstick with moisturizing ingredients and intense color",female
 "Bluetooth Speaker",899,"Portable speaker with great sound quality, long battery life, and water resistance",unisex
-"Sports Bra",299,"Comfortable sports bra with good support and breathable material, ideal for workouts",women
+"Sports Bra",299,"Comfortable sports bra with good support and breathable material, ideal for workouts",female
 "Smartphone",4499,"Latest model smartphone with high-resolution screen, powerful processor, and dual camera",unisex
 "Wall Decor",199,"Modern wooden wall decor with an abstract pattern, easy to hang",unisex
 "Air Filter",349,"Air purifier filter for improved indoor air quality, removes dust and allergens",unisex
@@ -13,7 +13,7 @@ product_name,price,description,gender
 "Children's Book",149,"Colorful children's book with illustrations and an exciting story",unisex
 "Office Chair",1999,"Ergonomic office chair with adjustable armrests, back, and seat, padded for extra comfort",unisex
 "Sports Shoes",699,"Versatile sports shoes with good cushioning and support, suitable for running and training",unisex
-"Wristwatch",1299,"Elegant wristwatch with leather strap and classic design, water-resistant up to 50 meters",men
+"Wristwatch",1299,"Elegant wristwatch with leather strap and classic design, water-resistant up to 50 meters",male
 "Sunscreen",149,"Protective sunscreen with high SPF, waterproof and easy to apply",unisex
 "Leather Bag",1299,"Quality leather bag with space for laptop, documents, and personal belongings",unisex
 "Exercise Mat",399,"High-quality exercise mat with anti-slip surface, perfect for yoga and workouts",unisex
@@ -23,27 +23,27 @@ product_name,price,description,gender
 "Alarm Clock",299,"Classic alarm clock with analog display, adjustable alarm, and snooze function",unisex
 "Coloring Book",129,"Inspiring coloring book for adults with beautiful patterns and designs",unisex
 "Winter Jacket",1499,"Warm winter jacket with insulating fill, water-resistant and windproof",unisex
-"Perfume",599,"Elegant perfume with a fresh and floral scent, 50 ml bottle",women
+"Perfume",599,"Elegant perfume with a fresh and floral scent, 50 ml bottle",female
 "Phone Case",149,"Slim silicone phone case with extra protection and grippy surface",unisex
 "Cleaning Products",219,"Set of eco-friendly cleaning products for clothes and home, includes detergent and fabric softener",unisex
 "Water Bottle",199,"Durable stainless steel water bottle, insulating and keeps liquids cold for several hours",unisex
 "Yoga Block",149,"Stable and lightweight foam yoga block, perfect for support during yoga exercises",unisex
 "Ruler",89,"Classic plastic ruler with both cm and inch measurements, 30 cm long",unisex
-"Makeup Mirror",299,"LED makeup mirror with magnification, adjustable brightness, and compact design",women
+"Makeup Mirror",299,"LED makeup mirror with magnification, adjustable brightness, and compact design",female
 "Running Shoes",799,"Running shoes with responsive cushioning and breathable upper for maximum comfort",unisex
 "Chocolate Box",249,"Exclusive box of chocolates with a selection of handmade pralines",unisex
 "Coffee Machine",1499,"Fully automatic coffee machine with milk frother and adjustable coffee settings",unisex
 "Jogging Pants",349,"Comfortable jogging pants with elastic waist and ankles, made from soft cotton",unisex
 "Heated Scarf",599,"Electronic heated scarf with built-in heating element, perfect for cold days",unisex
 "Sunglasses",799,"Sunglasses with polarized lenses and UV protection, modern design",unisex
-"Leather Belt",399,"Sleek leather belt with metal buckle, available in various sizes",men
-"Golf Set",2499,"Complete golf set with clubs, bag, and accessories, perfect for beginners",men
+"Leather Belt",399,"Sleek leather belt with metal buckle, available in various sizes",male
+"Golf Set",2499,"Complete golf set with clubs, bag, and accessories, perfect for beginners",male
 "Bicycle",5999,"Mountain bike with aluminum frame, 21 gears, and disc brakes",unisex
 "Suitcase",1999,"Lightweight suitcase with hard shell and 360-degree wheels, available in various sizes",unisex
-"Leather Shoes",1299,"Elegant leather shoes with laces, ideal for formal occasions",men
+"Leather Shoes",1299,"Elegant leather shoes with laces, ideal for formal occasions",male
 "Fitness Watch",1499,"Fitness watch with heart rate monitor, GPS, and workout programs",unisex
 "Capsule Coffee Machine",999,"Compact capsule coffee machine with fast brewing and adjustable cup sizes",unisex
-"Handbag",799,"Modern handbag in faux leather with multiple compartments, available in various colors",women
+"Handbag",799,"Modern handbag in faux leather with multiple compartments, available in various colors",female
 "Scarf",199,"Soft wool scarf to keep you warm during the winter months",unisex
 "Hiking Shoes",999,"Durable hiking shoes with waterproof membrane and good support for long hikes",unisex
 "Chocolate Truffles",179,"Decadent chocolate truffles made with dark chocolate and natural ingredients",unisex
@@ -57,14 +57,14 @@ product_name,price,description,gender
 "Headphones",1299,"Over-ear headphones with noise cancellation and crystal-clear sound quality",unisex
 "Training Shoes",1099,"Lightweight training shoes with extra support for stability and comfort during workouts",unisex
 "Travel Mug",249,"Thermal travel mug in stainless steel, keeps drinks warm for up to 8 hours",unisex
-"Electric Shaver",899,"Electric shaver with rotating heads and precision trimming",men
-"Hair Dryer",599,"Compact hair dryer with ionic technology for quick drying and less frizz",women
+"Electric Shaver",899,"Electric shaver with rotating heads and precision trimming",male
+"Hair Dryer",599,"Compact hair dryer with ionic technology for quick drying and less frizz",female
 "Electric Scooter",3999,"Foldable electric scooter with up to 25 km range",unisex
 "Waffle Iron",499,"Double waffle iron with adjustable temperature and non-stick coating",unisex
 "Heart Rate Monitor",999,"Heart rate monitor with activity tracking, sleep tracking, and water resistance",unisex
 "Suitcase Organizer",299,"Set of suitcase organizers in various sizes to keep luggage tidy",unisex
 "Water Bottle with Filter",249,"Reusable water bottle with built-in filter for clean water on the go",unisex
 "Shoe Dryer",799,"Electric shoe dryer that quickly dries shoes without damaging the material",unisex
-"Tie Set",349,"Tie set with matching pocket square and cufflinks in silk",men
+"Tie Set",349,"Tie set with matching pocket square and cufflinks in silk",male
 "Electric Grill",1999,"Portable electric grill with adjustable heat and non-stick grill plate",unisex
 "Training Gloves",199,"Padded training gloves with good grip, perfect for strength training",unisex
