@@ -10,10 +10,11 @@ from langchain_openai import OpenAI as LangChainOpenAI
 
 
 # Load environment variables
-load_dotenv()
-openai_api_key = os.getenv("OPENAI_API_KEY")
-if not openai_api_key:
-    raise ValueError("OPENAI_API_KEY is not set in the environment variables")
+# load_dotenv()
+# openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = ""
+# if not openai_api_key:
+    # raise ValueError("OPENAI_API_KEY is not set in the environment variables")
 
 
 def translate_to_english(text: str) -> str:
@@ -27,30 +28,7 @@ def translate_to_english(text: str) -> str:
     return response.strip()
 
 
-
-# Function for getting gender
-def get_gender_from_query(query: str) -> str:
-    terms_to_gender = {
-        "boy": "male",
-        "son": "male",
-        "daughter": "female",
-        "girl": "female",
-        "man": "male",
-        "woman": "female",
-        "male": "male",
-        "female": "female",
-        "uncle": "male",
-        "aunt": "female"
-    }
-    
-    for term, gender in terms_to_gender.items():
-        if term in query.lower():
-            return gender
-    
-    return "unisex"
-
-
-# Deal with prompt injection (should find a better way to do this)
+# Deal with prompt injection (is there a better way to do this?)
 def sanitize_input(input_text):
     blacklist = ["ignore", "system:", "forget", "instructions", "assistant:", "exit", "restart", "shut down", "delete"]
     blacklist_norwegian = ["ignorer", "system", "glem", "instrukser", "instruksjoner", "ordre"]
