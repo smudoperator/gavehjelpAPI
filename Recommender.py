@@ -23,8 +23,6 @@ class RecommendationRequest(BaseModel):
     customer_query: str
     context: List[ChatMessage]
 
-print("Starting application...")
-
 # Set up rate limiter
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
@@ -46,11 +44,10 @@ app.add_middleware(
 
 
 # Load environment variables
-# load_dotenv()
-# openai_api_key = os.getenv("OPENAI_API_KEY")
-openai_api_key = ""
-# if not openai_api_key:
-    # raise ValueError("OPENAI_API_KEY is not set in the environment variables")
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    raise ValueError("OPENAI_API_KEY is not set in the environment variables")
 
 
 # Initialize OpenAI LLM
@@ -78,7 +75,7 @@ prompt = PromptTemplate(
     ---
 
     You can only recommend gifts that available for purchase at the shopping mall "Galleriet" located in Bergen, Norway. 
-    Here is a list of the shops:
+    Here is a list of the shops that Galleriet has, you can ONLY recommend gifts from tehse shops:
     ---
     {shops}
     ---
@@ -91,7 +88,7 @@ prompt = PromptTemplate(
 
 # Endpoint for getting relevant products
 @app.post("/")
-@limiter.limit("50/hour") # 10 request per hour ?
+@limiter.limit("100/day") # 100 request per day is max, mostly as a security measure
 async def get_recommendations(request: Request, requestJson: RecommendationRequest):
     
     # Format customer query
@@ -99,8 +96,9 @@ async def get_recommendations(request: Request, requestJson: RecommendationReque
     if sanitized_query == "Invalid input detected.":
         return sanitized_query
     
-    # Translate customer query to english
-    english_query = CustomerPromptService.translate_to_english(sanitized_query)
+    # Translate customer query to english, currently testing without this step
+    #english_query = CustomerPromptService.translate_to_english(sanitized_query)
+    english_query = sanitized_query
     
     # List all shops
     shops = """ Accessorize, Adam og Eva, Apotek 1, Boys of Europe, Clas Ohlson, Companys, Cubus, 
@@ -127,12 +125,8 @@ async def get_recommendations(request: Request, requestJson: RecommendationReque
 
 
 # http://127.0.0.1:8000/docs#
+# start application: 
+"uvicorn Recommender:app --reload" 
 
 # Pricing
 "https://platform.openai.com/settings/organization/billing/overview"
-
-
-
-
-
-

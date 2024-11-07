@@ -2,19 +2,16 @@ import os
 from dotenv import load_dotenv
 from langchain_openai import OpenAI as LangChainOpenAI
 
-# This class deals with the customer prompt
+# This service deals with the customer prompt
 # Sanitazation
 # Translation
-# Embedding
-
 
 
 # Load environment variables
-# load_dotenv()
-# openai_api_key = os.getenv("OPENAI_API_KEY")
-openai_api_key = ""
-# if not openai_api_key:
-    # raise ValueError("OPENAI_API_KEY is not set in the environment variables")
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
+if not openai_api_key:
+    raise ValueError("OPENAI_API_KEY is not set in the environment variables")
 
 
 def translate_to_english(text: str) -> str:
